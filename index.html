@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSGO Fake Case Drop</title>
+    <link rel="website icon" type="png" href="images/case.png">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<h1 id="h1">Item drop settings</h1>
+
+<p>
+    <label class="normal-label" for="name">Your in-game name:</label>
+    <input id="name" type="text" value="esty">
+
+</p>
+
+<p>
+    <label class="normal-label" for="item">Item you want to "unbox":</label>
+    <input id="item" type="text" value="Bayonet M9">
+
+</p>
+
+<p>
+    <input id="starred" type="checkbox" value="Player" checked>
+    <label class="checkbox-label" for="starred">Knife or gloves?</label>
+
+</p>
+
+<p>
+    <label class="normal-label" for="paintkit">Skin:</label>
+    <input id="paintkit" type="text" value="Freehand">
+
+</p>
+
+<p>
+    <input id="stattrak" type="checkbox" value="Player">
+    <label class="checkbox-label" for="stattrak">StatTrack&trade;?</label>
+
+</p>
+
+<p>
+    <label class="normal-label" for="rarity">Rarity of the item:</label>
+
+    <select id="rarity">
+
+        <option value="0x0F" selected>Covert (red)</option>
+        <option value="0x0E">Classified (pink)</option>
+        <option value="0x0C">Mil-Spec (blue)</option>
+
+    </select>
+
+</p>
+
+<input id="copyinput" type="text">
+<button id="copybutton" onclick="copy_drop()">Copy unbox message</button>
+<button id="banbutton" onclick="copy_ban()">Copy ban message</button>
+
+
+<script src="js/app.js"></script>
+</body>
+</html>
+
